@@ -1,0 +1,191 @@
+/* General Styles */
+body {
+    font-family: Arial;
+    margin: 0;
+    background-color: #FDF6EC;      /* Soft beige background */
+    color: #3A3A3A;                 /* Elegant dark text */
+    text-align: center;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #2C3E50;      /* Deep navy for luxury */
+    padding: 15px;
+}
+
+nav ul {                              /* ul tag of nav */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {                          /* li tag of ul tag of nav */
+    margin: 0 20px;
+}
+
+nav ul li a {                       /* ancher tag of li tag of ul tag of nav */
+    text-decoration: none;
+    color: #FDF6EC;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: skyblue;                /*  Aqua hover effect */
+}
+
+/* Header */
+header {
+    width: 1500px;
+    background:  #34495E;       /* Gradient navy background */
+    padding: 70px 20px;
+    color: white;
+}
+
+header h1 {
+    font-size: 42px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+/* Hero Section */
+.hero {
+    width: 1500px;
+}
+
+.hero img { 
+    max-width: 900px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+iframe {
+    width: 1500px;
+}
+
+/* Products Section */
+.products {
+    padding: 50px 20px;
+}
+
+.product-grid {
+    display: flex;      /* Enables the Flexbox layout moves from left to right */
+    justify-content: center;
+    gap: 23px;
+    flex-wrap: wrap;    /* Items move to the next line if they don’t fit. */
+}
+
+.product {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.product img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.product ins {
+    color: red;
+}
+
+/* About Section */
+.about {
+    background: #F8E8D4;        /* Soft champagne background */
+    padding: 50px 20px;
+}
+
+.about pre {
+    font-size: 14px;
+}
+
+/* Contact Section */
+.contact {
+    background: silver;
+    padding: 50px;
+}
+
+/* Contact Info Styling */
+.contact-info {
+    font-size: 18px;
+}
+
+/* Forms */
+form {
+    background: white;
+    padding: 20px;
+    margin: 15px auto;
+    width: 40%;
+    border-radius: 15px;
+}
+
+form input, form textarea {
+    width: 90%;
+    margin: 15px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+button {
+    background: lightcoral;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: red;        /* Red hover */
+}
+
+footer {
+    width: 1500px;
+    border: 1px solid black;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: small;
+}
+
+@media (min-width: 750) { /* Extra Large (XL) - Large Desktops and Monitors */
+    .B {
+        background-color: #FDF6EC;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 749px) { /* Large (LG) - Larger Laptops and Desktops  */
+    .B {
+        background-color: aquamarine;
+    }
+
+    .H {
+        background-color: black;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 599px) { /* Large (LG) - Larger Laptops and Desktops  */
+    .B {
+        background-color: skyblue;
+    }
+
+    .H {
+        background-color: navy;
+    }
+}
